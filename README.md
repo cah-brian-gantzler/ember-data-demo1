@@ -24,10 +24,14 @@
     * bookName to title
 
 # "relationship"
-* belongsTo / hasMany
+* create author model - inherit base
+* fullName property
+* create author serializer - inherit application
+    * fix first_name, last_name
+* Add author to book model - belongsTo / hasMany
     * Async: true
-    * embedded records
-* serialize / deserialize - "ids", "records", false
+* add author to book serializer
+    * serialize / deserialize - "ids", "records", false
 
 # Ember-data-demo1
 
