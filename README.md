@@ -33,6 +33,22 @@
 * add author to book serializer
     * serialize / deserialize - "ids", "records", false
 
+
+# "cache"
+* Lazy load of author
+* store methods
+    * findAll / findRecord - {reload: true} 
+    * peekRecord / peekRecord 
+    * query / queryRecord
+* adapter methods
+    * shouldReloadAll / shouldReloadRecord - default false
+    * shouldBackgroundReloadAll / shouldBackgroundReloadRecord - default true
+* model methods
+    * hasDirtyAttributes
+    * changedAttributes
+    * dirtyType - created, updated, deleted
+    * isDeleted / isNew / isLoaded / isReloading / isSaving / isEmpty 
+    
 # Ember-data-demo1
 
 This README outlines the details of collaborating on this Ember application.
