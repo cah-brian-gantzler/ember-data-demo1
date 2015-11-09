@@ -1,3 +1,34 @@
+# Demo Application (Work in progress. Currently being rebased and force push) 
+
+# "Initial-create" - Nothing more than am ember new. Base application
+# "mirage" - Initial data framework
+### framework
+* adapter - RESTAdapter
+* serializer - RestSerializer
+    * Json responses
+        * [Probable response](../mirage/text/raw-json/json-ember-data-1.txt)
+        * [RestSerializer expects](../mirage/text/raw-json/json-ember-data-2.txt)
+    * Mixins
+        * Wrap
+        * Unwrap
+        * embedded records 
+* mirage
+* fixture data
+
+### Displaying the list of books
+* Index Route - model function
+* Index template - each loop
+* model book - definition of book - inherit base 
+    * add title
+* serializer - inherit application
+    * bookName to title
+
+# "relationship"
+* belongsTo / hasMany
+    * Async: true
+    * embedded records
+* serialize / deserialize - "ids", "records", false
+
 # Ember-data-demo1
 
 This README outlines the details of collaborating on this Ember application.

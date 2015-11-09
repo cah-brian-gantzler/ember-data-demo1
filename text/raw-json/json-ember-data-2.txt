@@ -1,0 +1,39 @@
+Ember RestSerializer expects
+
+Json array of books
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Book title 1",
+            "author": "a001"
+        },
+        {
+            "id": 2,
+            "title": "Book title 2",
+            "author": "a001"
+        }
+    ]
+}
+
+Json Array of books with embedded records
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Book title 1",
+            "author": "a001"
+        },
+        {
+            "id": 2,
+            "title": "Book title 2",
+            "author": "a001"
+        }
+    ],
+    "authors": [
+        {
+            id: "a001",
+            name: "Author Name 1"
+        }
+    }
+}

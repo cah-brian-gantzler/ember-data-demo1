@@ -1,0 +1,38 @@
+Json array of books
+{
+    [
+        {
+            "id": 1,
+            "title": "Book title 1",
+            "author": "a001"
+        },
+        {
+            "id": 2,
+            "title": "Book title 2",
+            "author": "a001"
+        }
+    ]
+}
+
+
+Json Array of books with embedded records
+{
+    [
+        {
+            "id": 1,
+            "title": "Book title 1",
+            "author": {
+                id: "a001",
+                name: "Author Name 1"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Book title 2",
+            "author": {
+                id: "a001",
+                name: "Author Name 1"
+            }
+        }
+    ]
+}
