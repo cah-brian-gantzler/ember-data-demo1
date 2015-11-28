@@ -177,7 +177,7 @@
       Alter the adapter to check time and reload at 20 min say
       shouldBackgroundReloadRecord: function(store, snapshot) {
         let minute = 60*1000;
-        let difference = new Date() - snapshot.record.get("createdAt");
+        let difference = new Date() - snapshot.get("createdAt");
         return difference / minute > 20;
       },
     

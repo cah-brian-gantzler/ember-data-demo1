@@ -1,1 +1,4 @@
 <div>books</div>
+{{#each model as |book index|}}
+    <div>{{index}} {{book.title}}</div>
+{{/each}}
