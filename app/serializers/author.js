@@ -2,7 +2,7 @@ import applicationSerializer from './application';
 
 export default applicationSerializer.extend({
     attrs: {
-        title: { key: "bookName" },
-        author: { key: "authorId", serialize: "ids", deserialize: "ids" }
+        firstName: { key: "first_name" },
+        lastName: { key: "last_name" }
     }
 });

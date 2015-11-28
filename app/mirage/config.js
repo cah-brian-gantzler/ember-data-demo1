@@ -15,7 +15,13 @@ export default function() {
   this.get("/authors");
   this.get("/authors/:id");
 
-  this.passthrough();
+    this.post("/books", function(db, request) {
+        var attrs = JSON.parse(request.requestBody);
+        var book = db.books.insert(attrs);
+        return book;
+    });
+
+    this.passthrough();
 
   /*
     Route shorthand cheatsheet
