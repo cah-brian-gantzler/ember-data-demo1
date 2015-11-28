@@ -1,3 +1,5 @@
+# Demo Application (Work in progress. Currently being rebased and force push) 
+
 # Ember-data-demo1
 
 This README outlines the details of collaborating on this Ember application.
