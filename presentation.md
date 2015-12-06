@@ -19,6 +19,8 @@
 
 * serializer - RestSerializer
   
+  JSONApi
+  
   explain application serializer
     
     * Json responses
@@ -37,7 +39,7 @@
 
 
 * model book 
-    create a mode definition of book - inherit base 
+    create a model definition of book - inherit base 
     add title
   
     ```
