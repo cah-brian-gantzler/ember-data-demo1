@@ -1,5 +1,15 @@
 <div>books</div>
 {{#each model as |book index|}}
     <div>{{index}} {{book.title}} - {{book.author.fullName}}
+        {{#if book.hasDirtyAttributes}}
+            <button {{action (action 'save' book)}}>Save</button>
+        {{/if}}
     </div>
 {{/each}}
+<div>
+    <button {{action 'add'}}>Add</button>
+</div>
+<div>
+    <button {{action 'unload'}}>Unload</button>
+    <button {{action 'refresh'}}>Refresh</button>
+</div>

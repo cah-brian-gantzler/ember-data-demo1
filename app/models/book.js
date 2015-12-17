@@ -1,7 +1,8 @@
 import DS from 'ember-data';
-import baseModel from './base';
+import baseModel from './base-model';
 
 export default baseModel.extend({
-	title: DS.attr(),
-	author: DS.belongsTo("author", { async: true })
+	title: DS.attr('string'),
+
+	author: DS.belongsTo('author', { async: true } )
 });

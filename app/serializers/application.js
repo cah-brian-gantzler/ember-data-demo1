@@ -15,4 +15,12 @@ import wrap from '../mixins/wrap-payload-in-root';
  *
  */
 export default DS.RESTSerializer.extend(wrap, unwrap, DS.EmbeddedRecordsMixin, {
+    attr: {
+        lastAccessDate: { serialize: false }
+    },
+
+    normalize: function(modelClass, resourceHash, prop) {
+        resourceHash.lastAccessDate = new Date().getTime();
+        return this._super(modelClass, resourceHash, prop);
+    }
 });
