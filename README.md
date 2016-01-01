@@ -1,6 +1,7 @@
-# Demo Application (Work in progress. Currently being rebased and force push) 
-
 # Ember-data-demo1
+
+Simple application showing the basics of Ember Data. Includes a power point deck.
+
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
